@@ -1,0 +1,48 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# ─── Virtual Environment (uv) ─────────────────────────────────────────────────
+.venv/
+
+# ─── Data (tracked by DVC, NOT by Git) ────────────────────────────────────────
+# DVC will manage these directories by generating its own .gitignore files.
+
+# ─── Model Artefacts ──────────────────────────────────────────────────────────
+*.pt
+*.pth
+# Hydra output directories
+outputs/
+multirun/
+
+# MLflow artifacts and database
+mlruns/
+mlflow.db
+
+# ─── IDE & OS ─────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ─── Environment Variables ────────────────────────────────────────────────────
+.env
+.env.*
+
+# ─── Testing & Coverage ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ─── Type Checking ────────────────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
